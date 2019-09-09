@@ -13,7 +13,7 @@
        &nbsp; <asp:TextBox id="inputBox" runat="server" Width="500" required="true"/>
                 </p>
             <p  class="lead">
-       &nbsp; <asp:Button id="button1" runat="server" Text="Draw a Shape" OnClick="button1Clicked" OnClientClick ="validation();"/>
+       &nbsp; <asp:Button id="button1" runat="server" Text="Draw a Shape" OnClick="button1Clicked"/>
             </p>
             </div>
         <div class="col-md-4">
