@@ -1,16 +1,26 @@
-﻿function validation() {
-    var val1 = document.getElementById("inputBox");
-    var val2 = 'Draw';
-    var str1 = val1.split(' ');
-        for (var i = 0; i < str1.length; i++) {
-            if (str1[0] === val2) {
-                return true
-            }
-            else {
-                alert('invalid string entered');
-            }
-            
-            
-        }
-    
-};
+﻿function rectangle(width, height) {
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeRect(100, 50, width, height);
+    ctx.stroke();
+}
+
+function circle(radius) {
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.arc(radius, radius, radius, 0, 2 * Math.PI);
+    ctx.stroke();
+}
+
+function square(side) {
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeRect(100, 100, side, side);
+    ctx.stroke();
+}
